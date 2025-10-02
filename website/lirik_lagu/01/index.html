@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(assets/background.jpg);
+            background-size: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .lirik {
+            font-family: system-ui,'Helvetica Neue', sans-serif;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            font-size: 35px;
+            transition: opacity 0.5s ease-in-out; /* Transisi untuk perubahan opacity */
+            opacity: 1; /* Nilai awal opacity */
+        }
+        .pencipta {
+            font-family: system-ui,'Helvetica Neue', sans-serif;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <p class="pencipta">--by Nadhif Basalamah</p>
+    <h1 class="lirik" id="lirik"></h1>
+    <button onclick="play_lirik(); audio.play()"></button>
+    <audio id="audio">
+        <source src="assets/bergema-sampai-selamanya.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        const audio = document.getElementById('audio')
+        let lirik = document.getElementById('lirik')
+        const txt = [
+        "Aku ingin jadi teman nyamanmu",
+        "Tempat kau hilangkan keluh kesahmu",
+        "Kita berbincang tak karuan, tanpa beban",
+        "Dan juga khayalan tentang masa depan",
+
+        "Ku tak ingin cepat berlalu (berlalu)",
+        "Waktu yang kupunya denganmu",
+        "Kita berdansa dan tertawa, gandeng tangan",
+        "Semoga bergema sampai selamanya",
+
+        "Dunia pasti ada akhirnya",
+        "Bintang-bintang pun ada umurnya",
+        "Maka tenang saja, kita di sini berdua",
+        "Nikmati sementara yang ada",
+
+        "Bersandar padaku, taruh di bahuku",
+        "Relakan semua, bebas semaumu",
+        "Percayalah, ini sayang terlewatkan",
+        "Kusampaikan dalam nyanyian, bergema sampai selamanya",
+
+        "Dunia pasti ada akhirnya",
+        "Bintang-bintang pun ada umurnya",
+        "Maka tenang saja, kita di sini berdua",
+        "Nikmati sementara yang ada",
+
+        "Bintang-bintang pun ada umurnya",
+        "Maka tenang saja, kita di sini berdua",
+        "Nikmati sementara yang ada",
+
+        "Semoga bergema selamanya",
+        ]
+        i = 0
+
+        function play_lirik() {
+            lirik.style.opacity = 0;
+
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },3000)
+            setTimeout(() => { lirik.style.opacity = 0 },7000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },9000)
+            setTimeout(() => { lirik.style.opacity = 0 },13000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },14000)
+            setTimeout(() => { lirik.style.opacity = 0 },19000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },20000)
+            setTimeout(() => { lirik.style.opacity = 0 },25000)
+            
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },28000)
+            setTimeout(() => { lirik.style.opacity = 0 },31000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },34000)
+            setTimeout(() => { lirik.style.opacity = 0 },37000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },38000)
+            setTimeout(() => { lirik.style.opacity = 0 },43000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },44000)
+            setTimeout(() => { lirik.style.opacity = 0 },50000)
+            
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },51000)
+            setTimeout(() => { lirik.style.opacity = 0 },55000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },56000)
+            setTimeout(() => { lirik.style.opacity = 0 },60000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },63000)
+            setTimeout(() => { lirik.style.opacity = 0 },68000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },72000)
+            setTimeout(() => { lirik.style.opacity = 0 },78000)
+
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },87000)
+            setTimeout(() => { lirik.style.opacity = 0 },92000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },93000)
+            setTimeout(() => { lirik.style.opacity = 0 },98000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },99000)
+            setTimeout(() => { lirik.style.opacity = 0 },103000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },104000)
+            setTimeout(() => { lirik.style.opacity = 0 },110000)
+
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },135000)
+            setTimeout(() => { lirik.style.opacity = 0 },140000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },141000)
+            setTimeout(() => { lirik.style.opacity = 0 },145000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },147000)
+            setTimeout(() => { lirik.style.opacity = 0 },155000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },156000)
+            setTimeout(() => { lirik.style.opacity = 0 },162000)
+
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },165000)
+            setTimeout(() => { lirik.style.opacity = 0 },170000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },171000)
+            setTimeout(() => { lirik.style.opacity = 0 },178000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },180000)
+            setTimeout(() => { lirik.style.opacity = 0 },185000)
+            setTimeout(() => {
+                lirik.textContent = txt[i]
+                lirik.style.opacity = 1;
+                i++
+            },186000)
+            setTimeout(() => { lirik.style.opacity = 0 },193000)
+        }
+
+        
+    </script>
+</body>
+</html>

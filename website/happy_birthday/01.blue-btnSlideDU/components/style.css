@@ -1,0 +1,87 @@
+
+
+html, body {
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: rgba(210, 210, 210, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 25px 0 rgba(0, 0, 0, 0.25);
+    transition: height 0.5s ease-in-out;
+}
+.card-open {
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: rgba(210, 210, 210, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card div h2 {
+    font-family: monospace;
+    font-size: 25px;
+    margin: 0;
+}
+.card div h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    color: #2374dd;
+    margin: 0;
+}
+.button {
+    background-color: #ffc107;
+    border-width: 1px;
+    border-radius: 8px;
+    height: 35px;
+    width: 250px;
+}
+.button-open {
+    background-color: #65635c;
+    border-width: 1px;
+    border-radius: 8px;
+    height: 35px;
+    width: 250px;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ucapan {
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    width: 250px;
+    display: none;
+    transition: display 0.5 ease-in-out;
+}
+.ucapan-open {
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    width: 250px;
+    display: block;
+    transition: display 0.5 ease-in-out;
+}
+
+
+
