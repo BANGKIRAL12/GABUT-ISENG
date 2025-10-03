@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(assets/corusel-1.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .mail {
+            background-color: rgba(225, 225, 225, 0.5);
+            height: 100px;
+            width: 250px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: Calibri;
+            transition: all 0.5s ease-in-out;
+        }
+        .hati {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: relative;
+            rotate: 45deg;
+            transition: all 0.5s ease-in-out;
+        }
+        .hati::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            transform: translate(-50%, 0);
+            transition: all 0.5s ease-in-out;
+        }
+        .hati::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            transform: translate(0%, -50%);
+            transition: all 0.5s ease-in-out;
+        }
+        .ic-h {
+            font-size: 20px;
+        }
+        #judul {
+            margin-bottom: 0;
+        }
+        .btn-open {
+            background-color: rgb(230, 0, 222);
+            border-width: 0.1px;
+            width: 180px;
+            border-radius: 6px;
+            font-family: cursive;
+        }
+        .masage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="mail" id="mail">
+        <h2 id="judul">mail for you <i class="fa fa-heart ic-h"></i></h2>
+        <p class="masage" id="masage">
+            Happy birthday diriku, selamat ulang taun yang ke-13. semoga tambah pintar dan di mudahkan rezekinya. jadi anak yang sholeh, manut sama orang tua. HAPPY BIRTHDAY
+            <p>--mas kiral--</p>
+        </p>
+        <button class="btn-open" id="btn-open" onclick="openMail()">open mail</button>
+    </div>
+    <div style="display: none; position: absolute; opacity: 0; transition: all 0.5s ease-in-out;" id="love">
+        <h2>HAPPY BIRTHDAY</h2>
+        <img src="https://media.tenor.com/Zrr4L_Wd4JkAAAAj/bubu-rub-bubu-love-dudu.gif" alt="">
+    </div>
+    <script>
+        const mail = document.getElementById('mail')
+        const judul = document.getElementById('judul')
+        const masage = document.getElementById('masage')
+        const button = document.getElementById('btn-open')
+        const love = document.getElementById('love')
+
+
+        let i = 0;
+        function openMail() {
+            i++
+
+            if ( i == 1 ) {
+                judul.innerHTML = `HAPPY BIRTHDAY`
+                mail.style.height = '300px'
+                masage.style.display = 'block'
+                button.innerHTML = `<i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i>`
+            }
+            if ( i == 2 ) {
+                mail.innerHTML = ''
+                mail.style.height = '100px'
+                mail.classList.remove('mail')
+                mail.classList.add('hati')
+                love.style.display = 'block'
+                setTimeout(() => {
+                    mail.style.scale = '2';
+                    love.style.opacity = '1';
+                    love.style.scale = '0.8';
+                }, 1000)
+            }
+        }
+    </script>
+</body>
+</html>
